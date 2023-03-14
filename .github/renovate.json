@@ -1,6 +1,6 @@
 {
   "extends": ["github>rancher/renovate-config#main"],
-  "baseBranches": ["main", "release/v9.9"],
+  "baseBranches": ["main", "release/v9.9", "test-gomod"],
   "regexManagers": [
     {
       "fileMatch": ["(^|/|\\.)Dockerfile$", "(^|/)Dockerfile[^/]*$"],
@@ -31,6 +31,15 @@
       "matchStrings": ["ENV CATTLE_DASHBOARD_UI_VERSION (?<currentValue>.*?)\\n"],
       "depNameTemplate": "rancher/dashboard",
       "datasourceTemplate": "github-releases"
+    },
+    {
+      "packageRules": [
+        {
+          "matchManagers": ["gomod"],
+          "matchDepTypes": ["indirect"],
+          "enabled": true
+        }
+      ]
     }
   ],
   "packageRules": [
