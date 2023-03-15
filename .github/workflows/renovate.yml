@@ -22,4 +22,6 @@ jobs:
     with:
       logLevel: ${{ inputs.logLevel || 'info' }}
       overrideSchedule: ${{ github.event.inputs.overrideSchedule == 'true' && '{''schedule'':null}' || '' }}
+      # slim image is the default and doesn't contain the Go binary
+      useSlim: false
     secrets: inherit
