@@ -1,1 +1,1 @@
-FROM registry.suse.com/bci/bci-base:15.4.27.14.71@sha256:870b30cbffe0ddde520fad04044f5ac4a44a594fa48091054e9d578e6a186d25
+FROM registry.suse.com/bci/bci-base:15.4.27.14.72@sha256:4c391a86ddca7a8cdb0209e03fefca9e084864124a61a03e058de1ee9aaae526
