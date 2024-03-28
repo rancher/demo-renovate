@@ -1,1 +1,1 @@
-FROM registry.suse.com/bci/bci-base:15.4.27.14.72
+FROM registry.suse.com/bci/bci-base:15.5.36.11.16
